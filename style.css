@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Encode Sans Expanded', sans-serif;
+}
+:root{
+    --main-clr: #f3ea37;
+}
+ul,li{
+    list-style-type: none;
+}
+
+/* classe utilitaire*/
+
+.container{
+    max-width: 1250px;
+    margin : auto;
+}
+
+.active{
+    background-color: #f3ea37;
+    border-radius: 5px;
+}
+
+/* Header */
+.header {
+    background-color:  #f3ea37;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 0.5em;
+}
+
+.header ul{
+    display : flex;
+    width: 290px;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 54px;
+    border-radius : 50%;
+}
+ .header a{
+    color : rgb(15, 10, 10);
+    text-decoration: none;
+    padding: 0.7em;
+ }
+
+ /* Main */
+
+ .main-section {
+    background-image: url("./img/starwars.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+    text-align: center;
+ }
+
+ .main-section h1{
+    font-size: 65px;
+    color: var(--main-clr);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    /*text-shadow: 1px 1px 4px black, -40px -20px 4px green;*/
+ }
+ .main-section p{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+ }
+ .main-section button{
+    padding: 30px 50px;
+    border: none;
+    border-radius:5px ;
+    cursor: pointer;
+
+ }
+.main-section div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.main-section button:first-child{
+    background-color: #f3ea37;
+    color: rgb(25, 20, 20);
+    
+}
+.main-section button:last-child{
+    background-color: #f3ea37;
+    color: rgb(33, 20, 20);
+    font-weight: bold;
+}
+@media only screen and (min-width : 720px) {
+    .main-section div{
+        flex-direction: row;
+    }
+}
+
+.main-section-contact {
+    /*background-image: url("./img/starwars.jpeg");*/
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1em;
+    text-align: center;
+ }
+
+ .main-section-contact h1{
+    font-size: 65px;
+    color: var(--main-clr);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    /*text-shadow: 1px 1px 4px black, -40px -20px 4px green;*/
+ }
+ .main-section-contact p{
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+ }
+ .main-section-contact button{
+    padding: 30px 50px;
+    border: none;
+    border-radius:5px ;
+    cursor: pointer;
+
+ }
+.main-section-contact div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.main-section-contact button:first-child{
+    background-color: #f3ea37;
+    color: rgb(25, 20, 20);
+    
+}
+.main-section-contact button:last-child{
+    background-color: #f3ea37;
+    color: rgb(33, 20, 20);
+    font-weight: bold;
+}
+@media only screen and (min-width : 720px) {
+    .main-section-contact div{
+        flex-direction: row;
+    }
+}
